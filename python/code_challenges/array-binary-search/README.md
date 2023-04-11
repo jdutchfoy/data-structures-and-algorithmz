@@ -33,4 +33,4 @@
 
     return -1
 
-- [Code Challenge 03 readme](https://github.com/jdutchfoy/data-structures-and-algorithms/blob/main/python/code_challenges/array_binary_search/README.md)
+- [Code Challenge 03 readme](https://github.com/jdutchfoy/data-structures-and-algorithms/blob/main/python/code_challenges/array-binary-search/README.md)
