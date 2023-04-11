@@ -1,3 +1,5 @@
+from typing import List
+
 class Node:
     def __init__(self, value, next_node=None):
         self.value = value
@@ -7,7 +9,7 @@ class LinkedList:
     def __init__(self, head=None):
         self.head = head
     
-    def kthFromEnd(self, k):
+    def kthFromEnd(self, k: int) -> int:
         if k < 0:
             raise ValueError("k must be a positive integer.")
         
@@ -26,3 +28,24 @@ class LinkedList:
             fast = fast.next_node
         
         return slow.value
+    
+    def insert(self, value):
+        node = Node(value)
+        node.next_node = self.head
+        self.head = node
+    
+    def includes(self, value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return True
+            current = current.next_node
+        return False
+    
+    def __str__(self):
+        current = self.head
+        output = ''
+        while current:
+            output += f'{{ {str(current.value)} }} -> '
+            current = current.next_node
+        return output + 'NULL'
