@@ -13,7 +13,7 @@ Expected output: head -> {1} -> {3} -> {2} -> NULL (no changes to the linked lis
 
 ## Approach & Efficiency
 
-## Big O:
+## Big O
 
 The time complexity of the insert before and insert after functions is O(n) because we have to traverse through the linked list until the given value is found, which could take up to n steps. The time complexity of the append function is O(1) because we can directly add a new node to the end of the linked list without having to traverse through it
 
@@ -44,4 +44,4 @@ assert str(linked_list) == "1 -> 5 -> 3 -> 5 -> 2 -> 5 -> NULL"
 linked_list.insert_after(4, 5)
 assert str(linked_list) == "1 -> 5 -> 3 -> 5 -> 2 -> 5 -> NULL"
 
-linked-list-insertions](linked_list/linked-list-insertions/README.md)
+[linked-list-insertions](linked_list/linked-list-insertions/README.md)
