@@ -11,10 +11,10 @@
 ## Approach & Efficiency
 
 - The function BinarySearch takes in two parameters: arr is the sorted array, and key is the value that we want to find.
-We initialize left and right variables to keep track of the boundaries of the search range. We start with left as 0 and right as the index of the last element in the array.
-We enter a while loop that continues until left becomes greater than right. This means that we have searched the entire array without finding the element.
-Inside the loop, we calculate the midpoint index using integer division.
-We compare the value at the midpoint index with the search key. If they are equal, we have found the element, so we return the index.
+- We initialize left and right variables to keep track of the boundaries of the search range. We start with left as 0 and right as the index of the last element in the array.
+- We enter a while loop that continues until left becomes greater than right. This means that we have searched the entire array without finding the element.
+- Inside the loop, we calculate the midpoint index using integer division.
+- We compare the value at the midpoint index with the search key. If they are equal, we have found the element, so we return the index.
 
 ## Solution
 
