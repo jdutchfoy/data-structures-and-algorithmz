@@ -6,7 +6,7 @@
 
 ## Whiteboard Process
 
-- ![alt text](image_file_path.png)
+- code_challenge_6_whiteboard.png
 
 ## Approach & Efficiency
 
