@@ -4,7 +4,8 @@
 
 ## Whiteboard Process
 
-- ![white board](code_challenge_8_whiteboard.png)
+- ! [white board](code_challenge_8_whiteboard2.png)
+
 
 ## Approach & Efficiency
 
