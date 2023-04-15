@@ -4,7 +4,8 @@
 
 ## Whiteboard Process
 
-- ![white board](code_challenge_8_whiteboard.png)
+- ![white bo<img width="2656" alt="code_challenge_8_whiteboard" src="https://user-images.githubusercontent.com/118240863/232258268-e5e915eb-82df-46ac-b5f4-897a73732640.png">
+ard]()
 
 ## Approach & Efficiency
 
