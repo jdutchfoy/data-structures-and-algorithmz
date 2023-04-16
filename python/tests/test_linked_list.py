@@ -1,4 +1,7 @@
+from linked_list import LinkedList
+
 def test_linked_list():
+    # test code...
     # Test append method
     linked_list = LinkedList()
     linked_list.append(1)
