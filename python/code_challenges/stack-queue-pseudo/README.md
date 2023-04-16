@@ -24,4 +24,6 @@ dequeue(): Extracts a value from the PseudoQueue, using a first-in, first-out ap
 
 ## Solution
 
+- [stack_queue_pseudo](stack_queue_pseudo.py)
+  
 - [Code_Challenge_11_readme](https://github.com/jdutchfoy/data-structures-and-algorithms/blob/main/python/code_challenges/stack-queue-pseudo/README.md)
