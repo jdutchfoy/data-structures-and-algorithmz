@@ -4,12 +4,13 @@
 
 - Create a PseudoQueue class that implements a standard queue interface using two Stack instances to create and manage the queue. The PseudoQueue should have the following methods:
 
-enqueue(value): Inserts a value into the PseudoQueue, using a first-in, first-out approach.
-dequeue(): Extracts a value from the PseudoQueue, using a first-in, first-out approach.
+- enqueue(value): Inserts a value into the PseudoQueue, using a first-in, first-out approach.
+
+- dequeue(): Extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
 ## Whiteboard Process
 
-- code_challenge_11_whiteboard.png
+- ![code_challenge_11_whiteboard.png](..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2FD3V%2Fchallenges%2Fcode_challenge_11_whiteboard.png)
 
 ## Approach & Efficiency
 
@@ -25,5 +26,5 @@ dequeue(): Extracts a value from the PseudoQueue, using a first-in, first-out ap
 ## Solution
 
 - [stack_queue_pseudo](stack_queue_pseudo.py)
-  
+
 - [Code_Challenge_11_readme](https://github.com/jdutchfoy/data-structures-and-algorithms/blob/main/python/code_challenges/stack-queue-pseudo/README.md)
