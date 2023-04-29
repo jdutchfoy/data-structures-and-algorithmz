@@ -1,32 +1,18 @@
+from data_structures.linked_list import LinkedList
+
+
 def zip_lists(list1, list2):
-    head = None
-    tail = None
-    
-    while list1 and list2:
-        if not head:
-            head = list1
-            tail = head
-            list1 = list1.next
-        else:
-            tail.next = list2
-            tail = tail.next
-            list2 = list2.next
-        
-        if list1:
-            tail.next = list1
-            tail = tail.next
-            list1 = list1.next
-    
-    if list1:
-        if tail:
-            tail.next = list1
-        else:
-            head = list1
-    
-    if list2:
-        if tail:
-            tail.next = list2
-        else:
-            head = list2
-    
-    return head
+    if not list1.head:
+        return list2
+    if not list2.head:
+        return list1
+    current1 = list1.head
+    current2 = list2.head
+    while current1 and current2:
+        temp1 = current1.next_node
+        temp2 = current2.next_node
+        current1.next_node = current2
+        current2.next_node = temp1
+        current1 = temp1
+        current2 = temp2
+    return list1
