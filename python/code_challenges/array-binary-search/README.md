@@ -18,19 +18,6 @@
 
 ## Solution
 
-- def BinarySearch(arr, key):
-    left, right = 0, len(arr) - 1
-
-    while left <= right:
-        mid = (left + right) // 2
-
-        if arr[mid] == key:
-            return mid
-        elif arr[mid] > key:
-            right = mid - 1
-        else:
-            left = mid + 1
-
-    return -1
+- [Challenge 3](array_binary_search.py)
 
 - [Code Challenge 03 readme](https://github.com/jdutchfoy/data-structures-and-algorithms/blob/main/python/code_challenges/array-binary-search/README.md)

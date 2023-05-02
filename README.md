@@ -20,4 +20,4 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- [stack-and-queue 10](https://github.com/jdutchfoy/stack-and-queue/blob/main/readme.md)
+
