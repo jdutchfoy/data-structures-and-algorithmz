@@ -1,99 +1,79 @@
-from linked_list import LinkedList, Node
-# from data_structures.invalid_operation_error import InvalidOperationError
-
-# Create a Queue class that has a front property. It creates an empty Queue when instantiated.
-
-
+# Define the Queue class
 class Queue:
+    """
+    A queue is a collection of elements that supports adding elements to the back 
+    and removing elements from the front, using a First-In-First-Out (FIFO) order.
+    """
+
+    # Constructor initialize an empty queue
     def __init__(self):
-        self.front = None
-        self.back = None
+        self.items = []
 
-    # Add a new item to the back of the queue
-    def enqueue(self, value):
-        node = Node(value)
-        if self.is_empty():
-            self.front = node
-            self.back = node
-        else:
-            self.back._next = node
-            self.back = node
+    # Method add a new element to the back of the queue
+    def enqueue(self, item):
+        self.items.append(item)
 
-    # Remove the next item from the front of the queue
+    # Method remove and return the element at the front of the queue
     def dequeue(self):
+        # If the queue is empty, raise an error
         if self.is_empty():
-            raise ValueError("Queue is empty")
-        node = self.front
-        self.front = self.front._next
-        if self.front is None:
-            self.back = None
-        return node.value
-
-    # Return the value of the item at the front of the queue without removing it
-    def peek(self):
-        if self.is_empty():
-            raise ValueError("Queue is empty")
-        return self.front.value
-
-    # Check whether the queue is empty
-    def is_empty(self):
-        return self.front is None
-
-# Create a class for animals
-
-
-class Animal:
-    def __init__(self, name):
-        self.name = name
-
-# Create a class for dogs that inherits from the Animal class
-
-
-class Dog(Animal):
-    pass
-
-# Create a class for cats that inherits from the Animal class
-
-
-class Cat(Animal):
-    pass
-
-# Create a class for an animal shelter
-
-
-class AnimalShelter:
-    def __init__(self):
-        self.dogs = []
-        self.cats = []
-
-    # Add an animal to the shelter
-    def enqueue(self, animal):
-        if isinstance(animal, Dog):
-            self.dogs.append(animal)
-        elif isinstance(animal, Cat):
-            self.cats.append(animal)
-
-    # Remove the next available animal from the shelter
-    def dequeue(self, preference=None):
-        if preference == 'dog':
-            if self.dogs:
-                return self.dogs.pop(0)
-        elif preference == 'cat':
-            if self.cats:
-                return self.cats.pop(0)
+            raise ValueError("Cannot dequeue from an empty queue")
         else:
-            if self.dogs:
-                return self.dogs.pop(0)
-            elif self.cats:
-                return self.cats.pop(0)
-        return Animal("")
+            # Otherwise, remove and return the element at the front of the queue
+            return self.items.pop(0)
 
-# create new AnimalShelter object, and  add some animals to it with the enqueue. We Then remove animals from the shelter with the dequeue method.
+    # Method return the value of the element at the front of the queue without removing it
+    def peek(self):
+        # If the queue is empty, raise an error
+        if self.is_empty():
+            raise ValueError("Cannot peek at an empty queue")
+        else:
+            # Otherwise, return the value of the element at the front of the queue
+            return self.items[0]
 
+    # Method check if the queue is empty
+    def is_empty(self):
+        return len(self.items) == 0
+    
+    # Test the Queue class
+def test_queue():
+    # Create an empty queue
+    q = Queue()
 
-# shelter = AnimalShelter()
-dog1 = Dog('Max')
-dog2 = Dog('Buddy')
-cat1 = Cat('Luna')
+    # Test enqueueing into a queue
+    q.enqueue(1)
+    assert q.items == [1]
 
-# code assistance by dom james
+    # Test enqueueing multiple values into a queue
+    q.enqueue(2)
+    q.enqueue(3)
+    assert q.items == [1, 2, 3]
+
+    # Test dequeuing out of a queue the expected value
+    assert q.dequeue() == 1
+    assert q.items == [2, 3]
+
+    # Test peeking into a queue, seeing the expected value
+    assert q.peek() == 2
+
+    # Test emptying a queue after multiple dequeues
+    q.dequeue()
+    q.dequeue()
+    assert q.is_empty() == True
+
+    # Test instantiating an empty queue
+    q = Queue()
+    assert q.is_empty() == True
+
+    # Test calling dequeue or peek on empty queue raises exception
+    try:
+        q.dequeue()
+        assert False
+    except ValueError as e:
+        assert str(e) == "Cannot dequeue from an empty queue"
+
+    try:
+        q.peek()
+        assert False
+    except ValueError as e:
+        assert str(e) == "Cannot peek at an empty queue"

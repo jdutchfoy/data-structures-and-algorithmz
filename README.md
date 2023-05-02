@@ -20,4 +20,4 @@ To run your tests
 
 ### 401 Data Structures, Code Challenges
 
-- [Code Challenge 03 readme](https://github.com/jdutchfoy/data-structures-and-algorithms/blob/main/python/code_challenges/array-binary-search/README.md
+
