@@ -1,4 +1,6 @@
-# linked-list-zip
+# README.md
+
+## linked-list-zip
 
 - We need to write a function that takes two linked lists as input and merges them by alternating nodes between them. The function should return a new linked list and keep extra space to a minimum.
 
