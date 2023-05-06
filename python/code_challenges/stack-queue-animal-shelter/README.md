@@ -6,7 +6,7 @@
 
 ## Whiteboard Process
 
-- ![white board](Code_Challenge_12_whiteboard.png)
+- 
 
 ## Approach & Efficiency
 
@@ -21,4 +21,5 @@
 
 ## Solution
 
+- [Challenge 12](stack-queue-animal-shelter.py)
 - [Code Challenge 12 readme](https://github.com/jdutchfoy/data-structures-and-algorithms/blob/main/python/code_challenges/stack-queue-animal-shelter/README.md)

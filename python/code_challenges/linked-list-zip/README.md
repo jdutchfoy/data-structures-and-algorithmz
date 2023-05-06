@@ -6,7 +6,8 @@
 
 ## Whiteboard Process
 
-- ! [white board](code_challenge_8_whiteboard2.png)
+- <img width="2656" alt="code_challenge_8_whiteboard 2" src="https://user-images.githubusercontent.com/118240863/232258769-742e5da9-6a12-4085-a2f3-6909754c6a9a.png">
+
 
 
 ## Approach & Efficiency
