@@ -6,7 +6,6 @@
 
 ## Whiteboard Process
 
--
 
 ## Approach & Efficiency
 
