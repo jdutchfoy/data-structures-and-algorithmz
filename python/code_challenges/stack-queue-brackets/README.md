@@ -31,6 +31,7 @@ Space: O(1)
 
 [view code](stack_queue_brackets.py)
 
+![code test result](..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2Fstack_queue_brackets%20test%20proof.png)
 ![stack_queue_brackets test proof.png](..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2Fstack_queue_brackets%20test%20proof.png)
 
 [Link to README.md](./README.md)
