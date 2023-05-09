@@ -6,7 +6,6 @@
 
 ## Whiteboard Process
 
-- code_challenge_6_whiteboard.png
 
 ## Approach & Efficiency
 
@@ -25,7 +24,7 @@ Space complexity: O(n)
 
 - The algorithm's time complexity is O(n), where n represents the length of the input string. This is because we traverse through the whole string only once. The space complexity is also O(n), as in the worst-case scenario, we will store all opening brackets on the stack before removing them.
 
-Time: O(n), where n is the length of the longest linked list
+- Time: O(n), where n is the length of the longest linked list
 Space: O(1)
 
 ## Solution
@@ -33,6 +32,7 @@ Space: O(1)
 [view code](stack_queue_brackets.py)
 
 ![code test result](..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2Fstack_queue_brackets%20test%20proof.png)
+![stack_queue_brackets test proof.png](..%2F..%2F..%2F..%2F..%2F..%2FDesktop%2Fstack_queue_brackets%20test%20proof.png)
 
 [Link to README.md](./README.md)
 
